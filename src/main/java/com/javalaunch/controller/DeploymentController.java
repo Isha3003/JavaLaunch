@@ -134,15 +134,5 @@ public class DeploymentController {
                 null
         );
     }
-    @GetMapping("/health")
-public ResponseEntity<?> healthCheck() {
 
-    return ResponseEntity.ok(
-        new ApiResponse<>(
-            true,
-            "JavaLaunch backend is running",
-            "UP"
-        )
-    );
-}
 }
